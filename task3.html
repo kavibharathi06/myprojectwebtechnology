@@ -3,6 +3,22 @@
 <head>
     <title>Show & Hide Password</title>
     <style>
+        body{
+            background-color: paleturquoise;
+            animation: backgroundAnimation 5s infinite alternate;
+   
+         }
+       @keyframes backgroundAnimation {
+          0% {
+      background-color: plum; /* Blue */
+          }
+          50% {
+      background-color: palegreen; /* Red */
+       }
+          100% {
+      background-color: paleturquoise; /* Green */
+    }
+  }
         /* Centering the form */
         .container {
             display: flex;
@@ -10,6 +26,10 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         /* Styling for input boxes */
